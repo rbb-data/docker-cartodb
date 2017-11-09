@@ -34,7 +34,7 @@ docker run -d -p 80:80 -h cartodb.localhost sverhoeven/cartodb
 The CartoDB instance has been configured with the hostname `cartodb.localhost`, this means the web browser and web server need to be able to resolve `cartodb.localhost` to an IP adress of the machine where the web server is running.
 This can be done by adding cartodb.localhost alias to your hosts file. For example
 ```
-sudo sh -c 'echo 127.0.1.1 cartodb.localhost >> /etc/hosts'
+sudo sh -c 'echo 127.0.0.1 cartodb.localhost >> /etc/hosts'
 ```
 (For Windows it will be `C:\Windows\System32\drivers\etc\hosts`)
 
